@@ -136,7 +136,30 @@ footer {
         margin-bottom: 0;
     }
     #footer-content {
+        display: flex;
+        justify-content: space-between;
         padding: 15px;
+
+        #ftcred {
+            display: flex;
+            p{
+                margin: 0;
+            }
+        }
+        
+        #ftsns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                margin: 7px;
+            }
+            img {
+                width: clamp(15px, 100%, 28px);
+                max-width: 28px;
+            }
+        }
     }
     a:link {
         color: rgb(175, 231, 255);
@@ -171,6 +194,9 @@ main {
         padding: 20px;
 
         #profile-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 32%;
         }
         #profile-img img {
@@ -182,6 +208,11 @@ main {
         }
         #profile-txt h2{
             text-decoration-line: underline;
+        }
+        @media screen and (max-width: 767px) {
+            #profile-txt h2 {
+                font-size: 120%;
+            }
         }
     }
     /* root */

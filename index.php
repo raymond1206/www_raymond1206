@@ -18,10 +18,9 @@ include "{$rootDir}backend/header.php";
                         <img src="<?php echo $rootDir; ?>assets/images/main_logo/Raymond1206_logo.jpg" alt="profile_picture" title="Raymond1206 Logo">
                     </div>
                     <div id="profile-txt">
-                        <h3>Music Producer</h3>
                         <h2>Raymond1206</h2>
             
-                        <p>Hi! I produce soundtracks for my own sake.</p><!--bio goes inside here-->
+                        <p>Hi! I produce soundtracks for my own sake. My works are available in several platforms, go have a check!</p><!--bio goes inside here-->
                     </div>
                 </div>
             </div>
