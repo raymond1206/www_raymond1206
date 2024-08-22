@@ -1,3 +1,7 @@
+<?php
+include 'lib/snslinks.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +21,12 @@
             <div id="dsk-link" class="hd-link">
                 <h1><a href="<?php echo $rootDir; ?>discography/">DISCOGRAPHY</a></h1>
                 <h1><a href="<?php echo $rootDir; ?>work/">WORK</a></h1>
-                <h1><a href="<?php echo $rootDir; ?>gallery/">GALLERY</a></h1>
                 <h1><a href="<?php echo $rootDir; ?>contact/">CONTACT</a></h1>
             </div>
             <div id="dsk-sns" class="hd-sns">
-                <a href="https://raymond1206.bandcamp.com/?from=viewsite_dashboard" target="_blank" title="BandCamp"><img src="<?php echo $rootDir; ?>/assets/images//link_logo/BandCamp.png" alt="bandcamp" ></a>
-                <a href="https://soundcloud.com/raymond1206" target="_blank" title="SoundCloud"><img src="<?php echo $rootDir; ?>assets/images/link_logo/SoundCloud.png" alt="soundcloud"></a>
-                <a href="https://twitter.com/raymondf1206" target="_blank" title="X (Twitter)"><img src="<?php echo $rootDir; ?>assets/images/link_logo/X.png" alt="X"></a>
+                <a href="<?php echo $BCL; ?>" target="_blank" title="BandCamp"><img src="<?php echo $rootDir; ?>/assets/images//link_logo/BandCamp.png" alt="bandcamp" ></a>
+                <a href="<?php echo $SCL; ?>" target="_blank" title="SoundCloud"><img src="<?php echo $rootDir; ?>assets/images/link_logo/SoundCloud.png" alt="soundcloud"></a>
+                <a href="<?php echo $XL; ?>" target="_blank" title="X (Twitter)"><img src="<?php echo $rootDir; ?>assets/images/link_logo/X.png" alt="X"></a>
             </div>
         </div>
         <div id="mbl-header">
@@ -41,13 +44,12 @@
                 <div id="mbl-link" class="hd-link">
                     <h1><a href="<?php echo $rootDir; ?>discography/">DISCOGRAPHY</a></h1>
                     <h1><a href="<?php echo $rootDir; ?>work/">WORK</a></h1>
-                    <h1><a href="<?php echo $rootDir; ?>gallery/">GALLERY</a></h1>
                     <h1><a href="<?php echo $rootDir; ?>contact/">CONTACT</a></h1>
                 </div>
                 <div id="mbl-sns" class="hd-sns">
-                    <a href="https://raymond1206.bandcamp.com/?from=viewsite_dashboard" target="_blank" title="BandCamp"><img src="<?php echo $rootDir; ?>/assets/images//link_logo/BandCamp.png" alt="bandcamp" ></a>
-                    <a href="https://soundcloud.com/raymond1206" target="_blank" title="SoundCloud"><img src="<?php echo $rootDir; ?>assets/images/link_logo/SoundCloud.png" alt="soundcloud"></a>
-                    <a href="https://twitter.com/raymondf1206" target="_blank" title="X (Twitter)"><img src="<?php echo $rootDir; ?>assets/images/link_logo/X.png" alt="X"></a>
+                    <a href="<?php echo $BCL; ?>" target="_blank" title="BandCamp"><img src="<?php echo $rootDir; ?>/assets/images//link_logo/BandCamp.png" alt="bandcamp" ></a>
+                    <a href="<?php echo $SCL; ?>" target="_blank" title="SoundCloud"><img src="<?php echo $rootDir; ?>assets/images/link_logo/SoundCloud.png" alt="soundcloud"></a>
+                    <a href="<?php echo $XL; ?>" target="_blank" title="X (Twitter)"><img src="<?php echo $rootDir; ?>assets/images/link_logo/X.png" alt="X"></a>
                 </div>
             </div>
         </div>

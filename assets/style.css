@@ -258,5 +258,29 @@ main {
         text-decoration: none;
         color: white;
     }
-        
+    /* discography */
+    #discography {
+        padding: 15px;
+        .dscimage {
+            border: 2px solid white;
+            border-radius: 1px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        display: grid;
+        justify-content: space-around;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+        grid-auto-rows: 220px;
+    }
+    @media screen and (min-width: 600px) {
+        .tall-img {
+            grid-row: span 2 / auto;
+        }
+        .wide-img {
+            grid-column: span 2 / auto;
+        }
+    }
+
 }
