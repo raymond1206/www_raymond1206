@@ -34,7 +34,12 @@ include "{$rootDir}backend/header.php";
                 <div id="news"><!--change id name depending on content-->
                     <!-- copy the whole section and paste the newes on top-->
                     <section class="news-item">
-                        <time datetime="2024-01-01"><a>2024.05.31</a></time>
+                        <time datetime="2024-02-11"><a>2024.02.11</a></time>
+                        <h2>"His Beach" Released!</h2>
+                        <p>My second release is here, with a calm taste soundtrack.  Available in all platforms!</p>
+                    </section>             
+                    <section class="news-item">
+                        <time datetime="2024-01-01"><a>2024.01.01</a></time>
                         <h2>"Ocean above Clouds" Released!</h2>
                         <p>I've released my first soundtrack. It is available in all platforms. Enjoy!</p>
                     </section>                    
