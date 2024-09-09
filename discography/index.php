@@ -15,6 +15,7 @@ include "{$rootDir}backend/header.php";
         <div class="content">
             <div id="discography"><!--change id name depending on content-->
                 <!-- <div class="dscimage" style="background-image: url(./images/);"></div> -->
+                <div class="dscimage" style="background-image: url(./images/His\ Beach.jpg);"></div>
                 <div class="dscimage" style="background-image: url(./images/1st_Discography.jpg);"></div>
                 <div class="dscimage" style="background-image: url(./images/tamariba-212.jpg);"></div>
                 <div class="dscimage" style="background-image: url(./images/tree\ 02\ 2048x2048.png);"></div>
