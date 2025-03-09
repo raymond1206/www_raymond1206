@@ -1,0 +1,79 @@
+body{
+    background-image: url(../../images/bg_img/background_image_color_square.jpg);
+}
+main{
+    --background: hsla(0, 0%, 100%, 0.25);
+    @media(min-width:921px){
+        #content{
+            background-color: var(--background);
+            margin: 0 auto;
+            padding: 0.5rem;
+            padding-bottom: 1rem;
+            width: clamp(860px, 60%, 1000px);
+            p{
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                    color: white;
+                }
+            }
+            form{
+                margin: 0 auto;
+                width: fit-content;
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 0.125rem;
+                    letter-spacing: 1px;
+                }
+                textarea{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 0.125rem;
+                    letter-spacing: 1px;
+                    width: 20rem;
+                    min-height: 5rem;
+                    height: 10rem;
+                    max-height: 20rem;
+                    resize: vertical;
+                }
+            }
+        }
+    }
+    @media(max-width:920px){
+        #content{
+            padding: 0.5rem;
+            padding-bottom: 1rem;
+            background-color: var(--background);
+            p{
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                    color: white;
+                }
+            }
+            form{
+                margin: 0 auto;
+                width: fit-content;
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 0.125rem;
+                    letter-spacing: 1px;
+                }
+                textarea{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    padding: 0.125rem;
+                    letter-spacing: 1px;
+                    width: 206px;
+                    max-width: calc(100% - 1rem);
+                    min-height: 5rem;
+                    height: 10rem;
+                    max-height: 20rem;
+                    resize: vertical;
+                }
+            }
+        }
+    }
+}

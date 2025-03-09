@@ -1,0 +1,28 @@
+@import url(header.css);
+@import url(footer.css);
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-image: url(../images/bg_img/background_image_black_square.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    position: absolute;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    top: 4rem;
+    left: 0;
+    height: calc(100% - 4rem - 3.5rem);
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    h1{
+        text-align: center;
+    }
+}

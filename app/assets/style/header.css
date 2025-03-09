@@ -1,0 +1,199 @@
+header{
+    --bgColour: hsl(0, 0%, 0%);
+    --textColour: hsl(0, 0%, 100%);
+    --hoverColour: hsl(0, 0%, 75%);
+}
+@media(min-width:921px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        #mobile{
+            display: none;
+        }
+        #desk{
+            --height: 4rem;
+            padding: 0 1rem;
+            background-color: var(--bgColour);
+            height: var(--height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                --size: calc(var(--height) * 0.75);
+                height: var(--size);
+                width: var(--size);
+                background-image: url();
+                background-image: url(../images/brand/Raymond1206_logo_2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                transition: filter 240ms;
+            }
+            .logo:hover{
+                filter: blur(1px);
+            }
+            .navigation{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        padding: 0.5rem;
+                        margin: 0 0.5rem;
+                        text-decoration: none;
+                        color: var(--textColour);
+                        font-size: 1.25rem;
+                        transition: color 240ms;
+                    }
+                    a:hover{
+                        color: var(--hoverColour);
+                    }
+                }
+            }
+            .sns{
+                --size: calc(var(--height) * 0.75);
+                height: var(--size);
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                a{
+                    margin: 0 0.25rem;
+                    .snslogo{
+                        height: var(--size);
+                        width: var(--size);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        transition: filter 240ms;
+                    }
+                }
+                a:hover{
+                    .snslogo{
+                        filter: blur(1px);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:920px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        #desk{
+            display: none;
+        }
+        #mobile{
+            --height: 4rem;
+            padding: 0 1rem;
+            background-color: var(--bgColour);
+            height: var(--height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                --size: calc(var(--height) * 0.75);
+                height: var(--size);
+                width: var(--size);
+                background-image: url();
+                background-image: url(../images/brand/Raymond1206_logo_2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                transition: filter 240ms;
+            }
+            .logo:hover{
+                filter: blur(1px);
+            }
+            #nav-button{
+                --size: calc(var(--height) * 0.5);
+                height: var(--size);
+                width: var(--size);
+                padding: 0.5rem;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                hr{
+                    border-radius: 2px;
+                    height: 2px;
+                    width: 100%;
+                    background-color: var(--textColour);
+                    border: none;
+                    margin: 0;
+                    transition: all 240ms;
+                }
+            }
+            #nav-button:hover{
+                cursor: pointer;
+                hr{
+                    background-color: var(--hoverColour);
+                    box-shadow: 2px 2px var(--textColour);
+                }
+            }
+            #display{
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                position: fixed;
+                top: var(--height);
+                left: 0;
+                width: 100%;
+                min-height: calc(50% - var(--height));
+                background-color: hsla(0, 0%, 0%, 0.8);
+                .navigation{
+                    ul{
+                        display: block;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            margin: 1.5rem;
+                        }
+                        a{
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            color: var(--textColour);
+                            font-size: 1.25rem;
+                            transition: color 240ms;
+                        }
+                        a:hover{
+                            color: var(--hoverColour);
+                        }
+                    }
+                }
+                .sns{
+                    --size: calc(var(--height) * 0.75);
+                    height: var(--size);
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding: 0 1rem 1rem 1rem;
+                    a{
+                        margin: 0 0.25rem;
+                        .snslogo{
+                            height: var(--size);
+                            width: var(--size);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            transition: filter 240ms;
+                        }
+                    }
+                    a:hover{
+                        .snslogo{
+                            filter: blur(1px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

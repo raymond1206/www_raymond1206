@@ -1,0 +1,76 @@
+body{
+    background-image: url(../../images/bg_img/background_image_color_square.jpg);
+}
+main{
+    --background: hsla(0, 0%, 100%, 0.25);
+    @media(min-width:921px){
+        #content{
+            background-color: var(--background);
+            margin: 0 auto;
+            padding: 0.5rem;
+            width: clamp(860px, 60%, 1000px);
+            #newnews{
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                #title{
+                    width: 30%;
+                }
+                #message{
+                    width: 50%;
+                }
+            }
+            #deletenews{
+                hr{
+                    margin: 0.5rem;
+                }
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                h3{
+                    margin: 0.25rem 0;
+                }
+                p{
+                    margin: 0.25rem 0;
+                }
+            }
+        }
+    }
+    @media(max-width:920px){
+        #content{
+            padding: 0.5rem;
+            background-color: var(--background);
+            #newnews{
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                #title{
+                    min-width: 150px;
+                    width: 30%;
+                }
+                #message{
+                    min-width: 150px;
+                    width: 50%;
+                }
+            }
+            #deletenews{
+                hr{
+                    margin: 0.5rem;
+                }
+                input{
+                    font-size: 1rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                h3{
+                    margin: 0.25rem 0;
+                }
+                p{
+                    margin: 0.25rem 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+main{
+    --background: hsla(0, 0%, 100%, 0.25);
+    @media(min-width:921px){
+        #content{
+            background-color: var(--background);
+            margin: 0 auto;
+            padding: 0.5rem;
+            width: clamp(860px, 60%, 1000px);
+        }
+        #imageGrid{
+            --size: 15rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, var(--size));
+            gap: 0.5rem;
+            justify-content: center;
+            .image{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: var(--size);
+                width: var(--size);
+                border: 1px solid white;
+            }
+        }
+    }
+    @media(max-width:920px){
+        #content{
+            background-color: var(--background);
+            margin: 0 auto;
+            padding: 0.5rem;
+        }
+        #imageGrid{
+            --size: 14rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, var(--size));
+            gap: 0.5rem;
+            justify-content: center;
+            .image{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: var(--size);
+                width: var(--size);
+                border: 1px solid white;
+            }
+        }
+    }
+}

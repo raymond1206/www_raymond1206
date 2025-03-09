@@ -5,3 +5,4 @@ AuthType Basic
 AuthName "Web access"
 Satisfy all
 Order deny,allow
+ErrorDocument 404 "/app/templates/404.php"
