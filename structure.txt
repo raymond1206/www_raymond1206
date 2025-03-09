@@ -33,3 +33,20 @@ music/
 photography/
     index.php
     images/
+
+Database
+app/data/database.db
+CREATE TABLE user (
+    username TEXT NOT NULL
+                  UNIQUE,
+    password TEXT NOT NULL
+                  UNIQUE
+);
+CREATE TABLE news (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT
+                    UNIQUE
+                    NOT NULL,
+    title   TEXT    NOT NULL,
+    date    TEXT    NOT NULL,
+    content TEXT    NOT NULL
+);
